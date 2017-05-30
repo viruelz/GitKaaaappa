@@ -154,9 +154,6 @@ namespace ProjetoGustavoGuedes.Controllers
                 if (id != null) url += "/" + id;
 
                 var request = await client.GetAsync(url);
-                //HttpContent content = new HttpContent();
-                //content.
-               // var r = client.PostAsync(url, content);
 
                 if (action != null)
                     action.Invoke(request);
